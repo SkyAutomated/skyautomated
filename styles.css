@@ -227,9 +227,14 @@ img {
 .nav-links .btn {
     padding: 8px 18px !important;
     font-size: 0.9rem !important;
+    text-decoration: none !important;
 }
 .nav-links .btn::after {
     display: none !important;
+}
+.nav-links .btn:hover::after {
+    display: none !important;
+    width: 0 !important;
 }
 
 .nav-cta {
