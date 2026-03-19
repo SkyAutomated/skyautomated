@@ -37,10 +37,11 @@ html {
 
 body {
     font-family: var(--font);
+    font-size: 1.05rem;
     background: var(--bg-primary);
     background-image: radial-gradient(circle at 20% 50%, rgba(0, 100, 200, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
@@ -224,14 +225,17 @@ img {
 .nav-phone:hover { color: #00d4ff; }
 
 .nav-btn {
-    padding: 8px 16px !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-    border-radius: 8px !important;
-    transition: border-color 0.2s, background 0.2s !important;
+    padding: 10px 20px !important;
+    border: 1px solid rgba(0, 212, 255, 0.4) !important;
+    border-radius: 50px !important;
+    background: rgba(0, 212, 255, 0.06) !important;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s !important;
+    font-weight: 600 !important;
 }
 .nav-btn:hover {
     border-color: var(--accent) !important;
-    background: rgba(0, 212, 255, 0.08) !important;
+    background: rgba(0, 212, 255, 0.15) !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2) !important;
 }
 .nav-btn::after { display: none !important; }
 
