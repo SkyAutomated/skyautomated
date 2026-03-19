@@ -65,6 +65,16 @@ if (canvas) {
   window.addEventListener("resize", () => { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; });
 }
 
+// FAQ accordion
+document.querySelectorAll(".faq-question").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains("open");
+    document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("open"));
+    if (!isOpen) item.classList.add("open");
+  });
+});
+
 // Contact form submission
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
