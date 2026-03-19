@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Automated | AI Automation & Web Design Agency | Eau Claire, WI</title>
+    <meta name="description" content="Sky Automated helps local businesses in Eau Claire, WI get online and automate their operations with AI-powered websites, chatbots, and marketing automation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Nav -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L4 8v16l12 6 12-6V8L16 2z" stroke="#00d4ff" stroke-width="2" fill="none"/>
+                        <path d="M16 8l-6 3v10l6 3 6-3V11l-6-3z" fill="#00d4ff" opacity="0.3"/>
+                        <path d="M16 12l-3 1.5v5L16 20l3-1.5v-5L16 12z" fill="#00d4ff"/>
+                    </svg>
+                </span>
+                <span class="logo-text">Sky <span class="accent">Automated</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <canvas id="heroCanvas"></canvas>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-badge animate-in">AI-Powered Solutions for Local Business</div>
+            <h1 class="hero-title animate-in">Put Your Business<br>on <span class="accent">Autopilot.</span></h1>
+            <p class="hero-sub animate-in">We build stunning websites and intelligent automation systems that help local businesses in Eau Claire capture more leads, save time, and grow — while you focus on what you do best.</p>
+            <div class="hero-actions animate-in">
+                <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+                <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number">10x</span>
+                    <span class="stat-label">Faster Response</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Availability</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">3x</span>
+                    <span class="stat-label">More Leads</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Everything Your Business Needs to <span class="accent">Thrive Online</span></h2>
+                <p class="section-sub">From your first website to a fully automated operation, we build systems that work for you around the clock.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="6" width="32" height="22" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                            <line x1="4" y1="24" x2="36" y2="24" stroke="#00d4ff" stroke-width="2"/>
+                            <line x1="16" y1="28" x2="24" y2="28" stroke="#00d4ff" stroke-width="2"/>
+                            <line x1="20" y1="28" x2="20" y2="34" stroke="#00d4ff" stroke-width="2"/>
+                            <line x1="14" y1="34" x2="26" y2="34" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="12" cy="15" r="2" fill="#00d4ff" opacity="0.5"/>
+                            <rect x="18" y="11" width="14" height="2" rx="1" fill="#00d4ff" opacity="0.3"/>
+                            <rect x="18" y="15" width="10" height="2" rx="1" fill="#00d4ff" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Professional Website</h3>
+                    <p>Custom-designed, lightning-fast websites that look incredible on every device. Built to convert visitors into customers.</p>
+                    <ul class="service-features">
+                        <li>Mobile-first responsive design</li>
+                        <li>SEO optimized from day one</li>
+                        <li>Built for speed and conversions</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="22" height="26" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                            <rect x="12" y="14" width="14" height="3" rx="1.5" fill="#00d4ff" opacity="0.3"/>
+                            <rect x="10" y="20" width="10" height="3" rx="1.5" fill="#00d4ff" opacity="0.5"/>
+                            <circle cx="30" cy="14" r="6" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M28 14h4M30 12v4" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M27 26l3 3 5-6" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Chat Assistant</h3>
+                    <p>An intelligent chatbot trained on your business that answers questions, captures leads, and books appointments — 24/7, never takes a day off.</p>
+                    <ul class="service-features">
+                        <li>Trained on your specific business</li>
+                        <li>Handles FAQs and scheduling</li>
+                        <li>Available around the clock</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="28" height="20" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M6 14h28" stroke="#00d4ff" stroke-width="2"/>
+                            <rect x="10" y="18" width="8" height="2" rx="1" fill="#00d4ff" opacity="0.3"/>
+                            <rect x="10" y="22" width="12" height="2" rx="1" fill="#00d4ff" opacity="0.3"/>
+                            <path d="M20 28l-4 6h8l-4-6z" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="32" cy="30" r="5" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M32 27v3l2 1.5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Automated Email & SMS</h3>
+                    <p>Automatic follow-up sequences that nurture leads, confirm appointments, and keep your customers coming back.</p>
+                    <ul class="service-features">
+                        <li>Smart follow-up sequences</li>
+                        <li>Appointment reminders</li>
+                        <li>Re-engagement campaigns</li>
+                    </ul>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="4" width="24" height="32" rx="3" stroke="#00d4ff" stroke-width="2"/>
+                            <rect x="12" y="10" width="16" height="16" rx="2" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+                            <line x1="12" y1="14" x2="28" y2="14" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <line x1="12" y1="18" x2="28" y2="18" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <line x1="12" y1="22" x2="28" y2="22" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <line x1="16" y1="10" x2="16" y2="26" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <line x1="20" y1="10" x2="20" y2="26" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <line x1="24" y1="10" x2="24" y2="26" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+                            <circle cx="18" cy="16" r="1.5" fill="#00d4ff"/>
+                            <rect x="22" y="19" width="4" height="4" rx="1" fill="#00d4ff" opacity="0.5"/>
+                            <circle cx="20" cy="32" r="1.5" fill="#00d4ff" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3>Appointment Booking</h3>
+                    <p>Online scheduling that syncs with your calendar. Customers book when it's convenient — no phone tag required.</p>
+                    <ul class="service-features">
+                        <li>Real-time availability sync</li>
+                        <li>Automatic confirmations</li>
+                        <li>No-show reduction</li>
+                    </ul>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="14" r="6" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M10 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="32" cy="10" r="5" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M30 10h4M32 8v4" stroke="#00d4ff" stroke-width="1.5"/>
+                            <path d="M8 28l-3 3M8 28l3 3" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+                            <rect x="3" y="31" width="10" height="5" rx="2" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3>Lead Capture & CRM</h3>
+                    <p>Smart forms and landing pages that capture leads, plus a simple CRM to track every prospect from first click to sale.</p>
+                    <ul class="service-features">
+                        <li>High-converting lead forms</li>
+                        <li>Automatic lead scoring</li>
+                        <li>Pipeline tracking</li>
+                    </ul>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card animate-in">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="14" stroke="#00d4ff" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="6" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+                            <path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="#00d4ff" stroke-width="2"/>
+                            <path d="M10.1 10.1l2.8 2.8M27.1 27.1l2.8 2.8M10.1 29.9l2.8-2.8M27.1 12.9l2.8-2.8" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+                            <circle cx="20" cy="20" r="2" fill="#00d4ff"/>
+                            <path d="M14 18l2 4 3-2 3 3 4-6" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Social Media Automation</h3>
+                    <p>Consistent, on-brand social media posts scheduled and published automatically. Stay visible without the daily grind.</p>
+                    <ul class="service-features">
+                        <li>Content calendar planning</li>
+                        <li>Auto-scheduled posting</li>
+                        <li>Performance analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">The Process</span>
+                <h2 class="section-title">Simple. Fast. <span class="accent">Effective.</span></h2>
+                <p class="section-sub">We've streamlined our process so you can go from overwhelmed to automated in weeks, not months.</p>
+            </div>
+            <div class="steps">
+                <div class="step animate-in">
+                    <div class="step-number">01</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="20" stroke="#00d4ff" stroke-width="1.5" opacity="0.3"/>
+                                <path d="M16 24l4 4 8-10" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="36" cy="12" r="5" stroke="#00d4ff" stroke-width="1.5"/>
+                                <path d="M34.5 12h3M36 10.5v3" stroke="#00d4ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>We Analyze Your Business</h3>
+                        <p>We sit down with you (virtual or in-person in Eau Claire) to understand your business, your customers, and where you're losing time or leads. No jargon, just a real conversation.</p>
+                    </div>
+                </div>
+                <div class="step animate-in">
+                    <div class="step-number">02</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="4" stroke="#00d4ff" stroke-width="1.5" opacity="0.3"/>
+                                <path d="M16 20h16M16 24h12M16 28h8" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M32 28l4 4 6-8" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>We Build Your System</h3>
+                        <p>Our team designs and builds your custom website and automation stack. You see progress weekly and sign off before anything goes live. Typical build time: 2-4 weeks.</p>
+                    </div>
+                </div>
+                <div class="step animate-in">
+                    <div class="step-number">03</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 8v8l6 4" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="16" stroke="#00d4ff" stroke-width="1.5" opacity="0.3"/>
+                                <path d="M12 36l-3 6M36 36l3 6" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M18 18c2-2 6-2 8 0" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>You Focus on What Matters</h3>
+                        <p>Your website attracts customers. Your AI handles inquiries. Your automations follow up. You do what you love — running your business — while the system works in the background.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Invest in Growth. <span class="accent">See Real ROI.</span></h2>
+                <p class="section-sub">Transparent pricing with no surprises. Every plan includes ongoing support, hosting, and updates.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card animate-in">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-desc">Perfect for getting online with a strong foundation.</div>
+                    <div class="pricing-amount">
+                        <span class="price-upfront">$1,500</span>
+                        <span class="price-label">one-time setup</span>
+                    </div>
+                    <div class="pricing-monthly">
+                        <span class="price-mo">$199</span><span class="price-period">/mo</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Professional custom website
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Lead capture forms
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            SEO optimization
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Hosting & SSL included
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Monthly analytics report
+                        </li>
+                        <li class="not-included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#555" stroke-width="2" stroke-linecap="round"/></svg>
+                            AI Chat Assistant
+                        </li>
+                        <li class="not-included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#555" stroke-width="2" stroke-linecap="round"/></svg>
+                            Email/SMS automation
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <!-- Growth -->
+                <div class="pricing-card featured animate-in">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-tier">Growth</div>
+                    <div class="pricing-desc">For businesses ready to capture and convert more leads automatically.</div>
+                    <div class="pricing-amount">
+                        <span class="price-upfront">$3,000</span>
+                        <span class="price-label">one-time setup</span>
+                    </div>
+                    <div class="pricing-monthly">
+                        <span class="price-mo">$399</span><span class="price-period">/mo</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Everything in Starter
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            AI Chat Assistant (24/7)
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Automated email follow-ups
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Online appointment booking
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            CRM & pipeline tracking
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Priority support
+                        </li>
+                        <li class="not-included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#555" stroke-width="2" stroke-linecap="round"/></svg>
+                            SMS automation
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                <!-- Full Auto -->
+                <div class="pricing-card animate-in">
+                    <div class="pricing-tier">Full Auto</div>
+                    <div class="pricing-desc">The complete package. Every system, fully automated. Maximum growth.</div>
+                    <div class="pricing-amount">
+                        <span class="price-upfront">$5,000</span>
+                        <span class="price-label">one-time setup</span>
+                    </div>
+                    <div class="pricing-monthly">
+                        <span class="price-mo">$699</span><span class="price-period">/mo</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Everything in Growth
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            SMS automation & reminders
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Social media automation
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Monthly performance reports
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Dedicated account manager
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Quarterly strategy reviews
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+                            Custom integrations
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-in">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Trusted by <span class="accent">Local Businesses</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-in">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Sky Automated completely transformed how we handle customer inquiries. Our AI chatbot answers questions at 2 AM that used to wait until Monday morning. We've seen a 40% increase in booked appointments since launching."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <strong>Jake Morrison</strong>
+                            <span>Morrison Plumbing & Heating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-in">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"I was spending 10 hours a week just managing emails and scheduling. Now it all happens automatically. The website they built us looks like it cost ten grand, and our leads have tripled. Best investment we've made."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <strong>Sarah Reinhart</strong>
+                            <span>Reinhart Family Dental</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-in">
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#00d4ff"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"As a small gym owner, I didn't think I could afford real automation. Sky Automated showed me I couldn't afford NOT to. New members sign up online, get welcome emails automatically, and our social media runs itself."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TK</div>
+                        <div class="author-info">
+                            <strong>Tyler Kowalski</strong>
+                            <span>Iron Valley Fitness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info animate-in">
+                    <span class="section-tag">Let's Talk</span>
+                    <h2 class="section-title">Ready to <span class="accent">Automate?</span></h2>
+                    <p>Book a free consultation and we'll show you exactly how automation can save you time, capture more leads, and grow your business.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#00d4ff" stroke-width="1.5">
+                                <path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 9 7 9s7-3.75 7-9c0-3.87-3.13-7-7-7z"/>
+                                <circle cx="10" cy="9" r="2.5"/>
+                            </svg>
+                            <span>Eau Claire, WI</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#00d4ff" stroke-width="1.5">
+                                <circle cx="10" cy="10" r="8"/>
+                                <path d="M2 10h16M10 2c2.5 2.5 3.5 5 3.5 8s-1 5.5-3.5 8c-2.5-2.5-3.5-5-3.5-8s1-5.5 3.5-8z"/>
+                            </svg>
+                            <span>skyautomated.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-guarantee">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <div>
+                            <strong>Free consultation, no strings attached.</strong>
+                            <span>We'll analyze your business and show you opportunities — even if you don't hire us.</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="business">Business Name</label>
+                        <input type="text" id="business" name="business" required placeholder="Smith's Auto Repair">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@business.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(715) 555-0123">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your business</label>
+                        <textarea id="message" name="message" rows="4" placeholder="What does your business do? What's your biggest challenge right now?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span class="btn-text">Get Your Free Consultation</span>
+                        <span class="btn-loading" style="display:none;">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="white" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="10"><animateTransform attributeName="transform" type="rotate" from="0 10 10" to="360 10 10" dur="0.8s" repeatCount="indefinite"/></circle></svg>
+                            Sending...
+                        </span>
+                    </button>
+                    <p class="form-note">We respond within 24 hours. Usually much faster.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 2L4 8v16l12 6 12-6V8L16 2z" stroke="#00d4ff" stroke-width="2" fill="none"/>
+                                <path d="M16 8l-6 3v10l6 3 6-3V11l-6-3z" fill="#00d4ff" opacity="0.3"/>
+                                <path d="M16 12l-3 1.5v5L16 20l3-1.5v-5L16 12z" fill="#00d4ff"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Sky <span class="accent">Automated</span></span>
+                    </a>
+                    <p class="footer-tagline">AI-powered websites and automation for local businesses in Eau Claire, WI and beyond.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Website Design</a></li>
+                        <li><a href="#services">AI Chatbots</a></li>
+                        <li><a href="#services">Email Automation</a></li>
+                        <li><a href="#services">Lead Generation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Automated. All rights reserved.</p>
+                <p>Eau Claire, WI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
