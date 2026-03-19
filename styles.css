@@ -228,6 +228,9 @@ img {
     padding: 8px 18px !important;
     font-size: 0.9rem !important;
 }
+.nav-links .btn::after {
+    display: none !important;
+}
 
 .nav-cta {
     padding: 10px 24px !important;
