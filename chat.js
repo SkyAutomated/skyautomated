@@ -300,6 +300,15 @@
       messages.push({ role: 'assistant', content: reply });
       removeTyping();
       addMessage('bot', reply);
+
+      // Show confirmation badge when lead is captured
+      if (data.leadCaptured) {
+        const badge = document.createElement('div');
+        badge.style.cssText = 'text-align:center;padding:6px 12px;background:rgba(0,212,255,0.1);border-radius:8px;color:#00d4ff;font-size:11px;border:1px solid rgba(0,212,255,0.2);';
+        badge.textContent = '✓ Our team will be in touch soon!';
+        messagesEl.appendChild(badge);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }
     } catch {
       removeTyping();
       addMessage('bot', "Hmm, I'm having trouble connecting. Try refreshing or contact us directly at hello@skyautomated.com");

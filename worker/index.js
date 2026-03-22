@@ -55,11 +55,14 @@ YOUR ROLE:
 - Be warm, friendly, and conversational — like talking to a knowledgeable friend, not a salesperson
 - Answer questions about services, pricing, and process clearly
 - Help visitors understand which plan is right for their business
-- Encourage them to book a free consultation for personalized advice
-- If they seem interested, ask for their name and email so we can follow up
+- After 2-3 exchanges, naturally ask for their name and email so the team can follow up personally. Example: "By the way, I'd love to have someone from our team reach out to you personally — what's your name and best email?"
+- Once they share their name/email, confirm it warmly and let them know the team will be in touch soon
 - Keep responses concise — 2-4 sentences max unless they ask for detail
 - Never make up information not listed above
-- If asked something you don't know, say you'll have the team follow up`;
+- If asked something you don't know, say you'll have the team follow up
+
+LEAD CAPTURE SIGNAL:
+When the user provides their email address, include this exact tag at the END of your response (hidden from display): [LEAD_CAPTURED]`;
 
 export default {
   async fetch(request, env) {
@@ -118,9 +121,36 @@ export default {
       }
 
       const data = await response.json();
-      const reply = data.choices?.[0]?.message?.content || "I'm having trouble responding right now. Please try again or contact us directly!";
+      let reply = data.choices?.[0]?.message?.content || "I'm having trouble responding right now. Please try again or contact us directly!";
 
-      return new Response(JSON.stringify({ reply }), {
+      // Detect lead capture signal and extract email from conversation
+      let leadCaptured = false;
+      if (reply.includes('[LEAD_CAPTURED]')) {
+        reply = reply.replace('[LEAD_CAPTURED]', '').trim();
+        leadCaptured = true;
+
+        // Extract email from recent messages
+        const allText = [...recentMessages, { role: 'assistant', content: reply }]
+          .map(m => m.content).join(' ');
+        const emailMatch = allText.match(/[\w.+-]+@[\w-]+\.[a-z]{2,}/i);
+        const nameMatch = allText.match(/(?:my name is|i'm|i am|call me)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i);
+
+        if (emailMatch) {
+          // Fire and forget — send lead to Formspree
+          fetch('https://formspree.io/f/mojkrakr', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: emailMatch[0],
+              name: nameMatch ? nameMatch[1] : 'Chat Lead',
+              message: `New chat lead captured!\n\nEmail: ${emailMatch[0]}\nName: ${nameMatch ? nameMatch[1] : 'Not provided'}\n\nConversation summary:\n${recentMessages.slice(-6).map(m => `${m.role}: ${m.content}`).join('\n')}`,
+              _subject: `New Chat Lead: ${nameMatch ? nameMatch[1] : emailMatch[0]}`,
+            }),
+          }).catch(() => {}); // silent fail
+        }
+      }
+
+      return new Response(JSON.stringify({ reply, leadCaptured }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
 
